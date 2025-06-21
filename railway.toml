@@ -1,5 +1,6 @@
 [build]
 builder = "Nixpacks"
+output = "."
 
 [phases.setup]
 nixPkgs = ['nodejs_18', 'php81', 'php81Packages.composer']
