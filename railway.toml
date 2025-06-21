@@ -15,7 +15,6 @@ cmds = [
 [phases.build]
 cmds = [
   'npm run build',
-  'npm install admin-lte',
   'php artisan optimize:clear',
   'php artisan config:cache',
   'php artisan route:cache',
