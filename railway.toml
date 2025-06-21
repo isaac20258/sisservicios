@@ -1,5 +1,6 @@
 [build]
 builder = "Nixpacks"
+output = "."  # Esto evita que borre los archivos generados como public/build
 
 [phases.setup]
 nixPkgs = ['nodejs_18', 'php81', 'php81Packages.composer']
@@ -22,4 +23,5 @@ cmds = [
 
 [start]
 cmd = 'php artisan serve --host=0.0.0.0 --port ${PORT}'
+
 
